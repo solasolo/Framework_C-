@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+	  <RootNamespace>SoulFab.Core.Data</RootNamespace>
+	  <BaseOutputPath>..\..\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.80" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Config\SoulFab.Core.Config.csproj" />
+    <ProjectReference Include="..\DbAbstract\SoulFab.Core.Db.Abstract.csproj" />
+  </ItemGroup>
+
+</Project>

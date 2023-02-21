@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>SoulFab.Tools</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>..\..\bin</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Code\Communication\SoulFab.Core.Communication.csproj" />
+	  <ProjectReference Include="..\..\Code\Logger\SoulFab.Core.Logger.csproj" />
+	  <ProjectReference Include="..\..\Code\UDPLogger\SoulFab.Core.UDPLogger.csproj" />
+	</ItemGroup>
+
+</Project>

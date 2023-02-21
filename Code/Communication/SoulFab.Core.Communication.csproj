@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+	  <RootNamespace>SoulFab.Core.Communication</RootNamespace>
+	  <BaseOutputPath>..\..\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <OutputPath>..\..\bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Base\SoulFab.Core.Base.csproj" />
+    <ProjectReference Include="..\Helper\SoulFab.Core.Helper.csproj" />
+    <ProjectReference Include="..\Logger\SoulFab.Core.Logger.csproj" />
+  </ItemGroup>
+
+</Project>
